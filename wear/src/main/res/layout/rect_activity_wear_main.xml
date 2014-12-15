@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WearMain"
+    tools:deviceIds="wear_square">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NPU Fall Alarm"
+        android:id="@+id/Title"
+        android:textColor="@color/red"
+        android:textAlignment="center" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acceleration Values::"
+                android:textSize="15dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/val_x1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="X Coordinate: " />
+            <TextView
+                android:id="@+id/x1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="0.0" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/val_y1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="Y Coordinate: " />
+            <TextView
+                android:id="@+id/y1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="0.0" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/val_z1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="Z Coordinate: " />
+            <TextView
+                android:id="@+id/z1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="0.0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orientation Values::"
+                android:textSize="15dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/val_x2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="X2 Coordinate:" />
+            <TextView
+                android:id="@+id/x2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="0.0" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/val_y2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="Y2 Coordinate:" />
+            <TextView
+                android:id="@+id/y2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="0.0" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/val_z2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="X2 Coordinate:" />
+            <TextView
+                android:id="@+id/z2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="0.0" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/startContinuous"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Send Continuous"
+                android:layout_span="2"
+                android:background="@color/green"
+                android:backgroundTint="@color/green" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
